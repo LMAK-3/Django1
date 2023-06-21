@@ -1,9 +1,10 @@
-from django.shortcuts import render,HttpResponse
+from django.shortcuts import render, HttpResponse
 
+# Create your views here.
 # Create your views here.
 def home(request):
 	#return HttpResponse(html_base +'<h2>Mi web personal </h2>')
-	return render(request, 'core/home.html')
+	return render(request, 'core/index.html')
 def about(request):
 	return render(request, 'core/about.html')
 	#return HttpResponse(html_base +'<h2>Acerca de </h2>')
